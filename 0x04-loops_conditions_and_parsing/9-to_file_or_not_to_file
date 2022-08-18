@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
-# displays information about the holbertonschool file.
+# This script is displaying "Holberton School" 10 times
+file_h="holbertonschool"
 
-FILE="holbertonschool"
-
-if [ -e "$FILE" ]
+if [ -e "$file_h" ]
 then
+
     echo "holbertonschool file exists"
-    if [ ! -s "$FILE" ]
+    if [ -s "$file_h" ]
     then
-        echo "holbertonschool file is empty"
-    else
         echo "holbertonschool file is not empty"
+    else
+        echo "holbertonschool file is empty"
     fi
-    if [ -f "$FILE" ]
+
+    if [ -f "$file_h" ]
     then
         echo "holbertonschool is a regular file"
     fi
